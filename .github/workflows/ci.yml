@@ -87,7 +87,7 @@ jobs:
 
       - name: Escanear servicio Java (bloquea si hay severidad alta o crítica)
         working-directory: servicio-java
-        run: snyk test --file=pom.xml --severity-threshold=high
+        run: snyk test --file=pom.xml --severity-threshold=high -d
 
       - name: Escanear servicio Python (bloquea si hay severidad alta o crítica)
         working-directory: servicio-python
