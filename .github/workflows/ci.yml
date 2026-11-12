@@ -84,7 +84,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Construir y publicar imagen Java
-        uses: docker/build-push-action@v6
+        uses: docker/build-push-action@v7
         with:
           context: ./servicio-java
           push: ${{ github.event_name == 'push' }}
@@ -93,7 +93,7 @@ jobs:
             ${{ env.IMAGE_PREFIX }}-java:latest
 
       - name: Construir y publicar imagen Python
-        uses: docker/build-push-action@v6
+        uses: docker/build-push-action@v7
         with:
           context: ./servicio-python
           push: ${{ github.event_name == 'push' }}
