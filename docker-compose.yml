@@ -1,0 +1,14 @@
+services:
+  servicio-java:
+    build: ./servicio-java
+    container_name: servicio-java
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+
+  servicio-python:
+    build: ./servicio-python
+    container_name: servicio-python
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
