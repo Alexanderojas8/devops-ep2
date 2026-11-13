@@ -1,0 +1,22 @@
+services:
+  servicio-java:
+    image: ghcr.io/alexanderojas8/devops-ep2-java:${IMAGE_TAG:-latest}
+    container_name: servicio-java
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    mem_limit: 512m
+    cpus: 0.5
+    security_opt:
+      - no-new-privileges:true
+
+  servicio-python:
+    image: ghcr.io/alexanderojas8/devops-ep2-python:${IMAGE_TAG:-latest}
+    container_name: servicio-python
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+    mem_limit: 256m
+    cpus: 0.5
+    security_opt:
+      - no-new-privileges:true
