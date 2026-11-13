@@ -85,9 +85,12 @@ jobs:
       - name: Instalar Snyk CLI
         uses: snyk/actions/setup@master
 
+      - name: Dar permiso a mvnw
+        run: chmod +x servicio-java/mvnw
+
       - name: Escanear servicio Java (bloquea si hay severidad alta o crítica)
         working-directory: servicio-java
-        run: snyk test --file=pom.xml --severity-threshold=high -d
+        run: snyk test --file=pom.xml --severity-threshold=high
 
       - name: Escanear servicio Python (bloquea si hay severidad alta o crítica)
         working-directory: servicio-python
