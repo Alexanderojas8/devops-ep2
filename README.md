@@ -2,7 +2,7 @@
 
 Evaluación Parcial 2, Ingeniería DevOps (DOY0101).
 
-**Integrantes:** (Alexander Rojas) y (Niover Guevara)
+**Integrantes:** Alexander Rojas y Niover Guevara
 
 ## Descripción
 
@@ -20,8 +20,9 @@ devops-ep2/
 ├── .github/
 │   ├── dependabot.yml
 │   └── workflows/ci.yml
-├── servicio-java/        (código, pruebas, Dockerfile)
-├── servicio-python/      (código, pruebas, Dockerfile)
+├── docs/evidencias/            (capturas del pipeline)
+├── servicio-java/              (código, pruebas, Dockerfile)
+├── servicio-python/            (código, pruebas, Dockerfile)
 ├── docker-compose.yml          (desarrollo: construye las imágenes)
 ├── docker-compose.deploy.yml   (despliegue: usa imágenes del registro)
 └── README.md
@@ -85,12 +86,43 @@ Docker Compose define ambos servicios, sus puertos, sus límites de recursos y s
 
 ## Evidencias
 
-(Insertar aquí las capturas: pipeline bloqueado por Snyk, pipeline en verde, paquetes publicados, despliegue y entorno.)
+### 1. Pipeline bloqueado por Snyk (50 vulnerabilidades en Java)
+![Pipeline bloqueado](docs/evidencias/pipeline-bloqueado-50.png)
+
+### 2. Tras actualizar Spring Boot (queda 1 vulnerabilidad)
+![Una vulnerabilidad restante](docs/evidencias/pipeline-bloqueado-1.png)
+
+### 3. Pipeline completo en verde
+![Pipeline en verde](docs/evidencias/pipeline-verde.png)
+
+### 4. Imágenes publicadas en GitHub Container Registry
+![Paquetes](docs/evidencias/paquetes-ghcr.png)
+
+### 5. Despliegue verificado
+![Verificación del despliegue](docs/evidencias/despliegue-verificacion.png)
+
+### 6. Entorno de despliegue registrado
+![Entorno](docs/evidencias/entorno-produccion.png)
 
 ## Uso de inteligencia artificial
 
-(Declarar qué herramientas de IA se usaron y para qué, de forma honesta y con la cita que pide la guía de la biblioteca Duoc.)
+Se utilizó Claude (Anthropic) como apoyo en este trabajo, de la siguiente forma:
+
+- Guía paso a paso para instalar y configurar el entorno (Git, Docker, Java, Python, VS Code).
+- Borradores de los Dockerfile, de los docker-compose, del workflow de GitHub Actions y de la configuración de Dependabot y Snyk.
+- Ayuda para interpretar errores del pipeline y proponer correcciones de versiones de dependencias.
+- Borrador inicial de este README, que el equipo revisó y modificó.
+
+Todo el contenido generado fue revisado, ejecutado y validado por el equipo. Las conclusiones individuales fueron redactadas por cada integrante sin apoyo de IA.
+
+Referencia: (completar según el formato indicado en https://bibliotecas.duoc.cl/ia)
 
 ## Conclusiones individuales
 
-(Cada integrante escribe aquí su reflexión personal, sin ayuda de IA.)
+### Alexander Rojas
+
+(Durante este proyecto aprendí cómo automatizar procesos con GitHub Actions, trabajar con Docker y configurar pruebas y seguridad para los microservicios. También pude mejorar mi capacidad para solucionar errores y entender la importancia de un pipeline antes de desplegar una aplicación.)
+
+### Niover Guevara
+
+(En este proyecto aprendí más sobre Docker, GitHub Actions y la automatización del despliegue. También comprendí la importancia de realizar pruebas y revisar la seguridad de las aplicaciones antes de publicarlas. Fue una buena experiencia para poner en práctica lo aprendido en clases..)
