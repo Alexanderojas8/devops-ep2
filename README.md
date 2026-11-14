@@ -84,12 +84,6 @@ Docker Compose define ambos servicios, sus puertos, sus límites de recursos y s
 - El reporte de cobertura de JaCoCo se guarda como artefacto en cada ejecución.
 - Limitación actual: JaCoCo informa la cobertura, pero el pipeline no exige un porcentaje mínimo.
 
-## Documentación adicional
-
-- [CONTRIBUTING.md](CONTRIBUTING.md): flujo de trabajo, commits y pruebas en local.
-- [CHANGELOG.md](CHANGELOG.md): registro de cambios del proyecto.
-- [SECURITY.md](SECURITY.md): política de seguridad y medidas aplicadas.
-
 ## Evidencias
 
 ### 1. Pipeline bloqueado por Snyk (50 vulnerabilidades en Java)
