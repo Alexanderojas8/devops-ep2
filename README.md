@@ -84,6 +84,12 @@ Docker Compose define ambos servicios, sus puertos, sus límites de recursos y s
 - El reporte de cobertura de JaCoCo se guarda como artefacto en cada ejecución.
 - Limitación actual: JaCoCo informa la cobertura, pero el pipeline no exige un porcentaje mínimo.
 
+## Documentación adicional
+
+- [CONTRIBUTING.md](CONTRIBUTING.md): flujo de trabajo, commits y pruebas en local.
+- [CHANGELOG.md](CHANGELOG.md): registro de cambios del proyecto.
+- [SECURITY.md](SECURITY.md): política de seguridad y medidas aplicadas.
+
 ## Evidencias
 
 ### 1. Pipeline bloqueado por Snyk (50 vulnerabilidades en Java)
@@ -115,14 +121,14 @@ Se utilizó Claude (Anthropic) como apoyo en este trabajo, de la siguiente forma
 
 Todo el contenido generado fue revisado, ejecutado y validado por el equipo. Las conclusiones individuales fueron redactadas por cada integrante sin apoyo de IA.
 
-Referencia: (completar según el formato indicado en https://bibliotecas.duoc.cl/ia)
+Referencia: Anthropic. (2026). *Claude* [Modelo de lenguaje de gran tamaño]. https://claude.ai
 
 ## Conclusiones individuales
 
 ### Alexander Rojas
 
-(Durante este proyecto aprendí cómo automatizar procesos con GitHub Actions, trabajar con Docker y configurar pruebas y seguridad para los microservicios. También pude mejorar mi capacidad para solucionar errores y entender la importancia de un pipeline antes de desplegar una aplicación.)
+Durante este proyecto aprendí cómo automatizar procesos con GitHub Actions, trabajar con Docker y configurar pruebas y seguridad para los microservicios. También pude mejorar mi capacidad para solucionar errores y entender la importancia de un pipeline antes de desplegar una aplicación.
 
 ### Niover Guevara
 
-(En este proyecto aprendí más sobre Docker, GitHub Actions y la automatización del despliegue. También comprendí la importancia de realizar pruebas y revisar la seguridad de las aplicaciones antes de publicarlas. Fue una buena experiencia para poner en práctica lo aprendido en clases..)
+En este proyecto aprendí más sobre Docker, GitHub Actions y la automatización del despliegue. También comprendí la importancia de realizar pruebas y revisar la seguridad de las aplicaciones antes de publicarlas. Fue una buena experiencia para poner en práctica lo aprendido en clases.
